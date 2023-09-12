@@ -1,0 +1,857 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@300;400;700&family=Saira:wght@300;400;700&display=swap') * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+
+header {
+    position: relative;
+    overflow: hidden;
+    max-width: 1920px;
+    margin: 0px auto;
+    background-color: #29a6dc;
+    height: 100vh;
+}
+
+header > * {
+    position: absolute;
+}
+
+header img {
+    height: 50%;
+    bottom: 0;
+    right: 0;
+}
+
+header div.head {
+    top: 3%;
+    left: 5%;
+    right: 5%;
+    color: white;
+    font-family: 'saira condensed', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    z-index: 1;
+
+}
+
+header p {
+    font-size: 20px;
+}
+
+header h1 {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+header h2 {
+    font-size: 20px;
+    font-weight: normal;
+}
+
+header button {
+    margin-top: 15px;
+    padding: 0 20px;
+    line-height: 40px;
+    text-align: center;
+    border: 1px solid white;
+    font-size: 12px;
+    font-family: 'saira', sans-serif;
+    text-transform: uppercase;
+    color: white;
+    background-color: transparent;
+
+}
+
+@media (orientation: portrait) and (min-width: 360px) {
+    header p {
+        font-size: 25px;
+    }
+
+    header h1 {
+        font-size: 25px;
+    }
+
+    header h2 {
+        font-size: 25px;
+    }
+
+    header button {
+        margin-top: 10px;
+        font-size: 18px;
+        padding: 0 25px;
+    }
+
+    header img {
+        right: -10%
+    }
+
+}
+
+@media (orientation: portrait) and (min-width: 410px) {
+    header button {
+        margin-top: 50px;
+        font-size: 20px;
+        padding: 0 15px;
+    }
+
+    header img {
+        right: -20%;
+    }
+}
+
+@media (orientation: portrait) and (min-width: 768px) {
+    header p {
+        font-size: 46px;
+    }
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    header h2 {
+        font-size: 30px;
+    }
+
+    header button {
+        margin-top: 25px;
+        font-size: 38px;
+        padding: 10px 25px;
+    }
+
+    header img {
+        left: 190px;
+        bottom: 30px;
+
+    }
+}
+
+@media (orientation: landscape) {
+
+    header div.head {
+        top: 20px;
+        bottom: 20px;
+        left: 10px;
+        right: 190px;
+    }
+
+    header p {
+        font-size: 22px;
+    }
+
+    header h1 {
+        font-size: 22px;
+    }
+
+    header h2 {
+        font-size: 22px;
+    }
+
+    header button {
+        margin-top: 10px;
+        font-size: 16px;
+        padding: 0 25px;
+    }
+
+    header img {
+        height: 80%;
+        right: -50px;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 640px) {
+
+
+    header div.head {
+        left: 5px;
+        right: 240px;
+        top: 50px
+    }
+
+    header img {
+        height: 85%;
+        right: -65px;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 1024px) {
+
+    header div.head {
+        top: 20%;
+        left: 2%;
+        right: 40%
+    }
+
+    header p {
+        font-size: 40px;
+    }
+
+    header h1 {
+        margin-top: 50px;
+        font-size: 30px;
+    }
+
+    header h2 {
+        font-size: 30px;
+    }
+
+    header button {
+        margin-top: 60px;
+        font-size: 25px;
+        line-height: 70px;
+    }
+
+    header img {
+        right: -40%;
+        height: 85%;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 1280px) {
+
+    header div.head {
+        text-align: left;
+        left: 6%;
+    }
+
+    header p {
+        font-size: 80px;
+    }
+
+    header h1 {
+        margin-top: 40px;
+        font-size: 30px;
+    }
+
+    header h2 {
+        font-size: 30px;
+    }
+
+    header button {
+        margin-top: 100px;
+        font-size: 25px;
+        line-height: 80px;
+        padding: 0 40px;
+        border-width: 2px;
+    }
+
+    header img {
+        right: -18%;
+        height: 80%;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 1600px) {
+
+    header div.head {
+        left: 8%;
+        top: 3%;
+
+    }
+
+    header p {
+        font-size: 120px;
+    }
+
+    header h1 {
+        margin-top: 30px;
+        font-size: 60px;
+    }
+
+    header h2 {
+        font-size: 60px;
+    }
+
+    header button {
+        line-height: 90px;
+    }
+
+    header img {
+        right: -8%;
+        height: 90%;
+    }
+}
+
+@media (min-width: 1024px) {
+    header button {
+        cursor: pointer;
+        transition: .4s;
+    }
+
+    header button:hover {
+        background-color: white;
+        color: black;
+    }
+
+}
+
+
+/*sekcja1 tworze*/
+section.cechy {
+    margin: 40px auto 0;
+    padding: 5%;
+    max-width: 1600px;
+    text-align: center;
+}
+
+section.cechy img {
+    width: 100%;
+    max-width: 250px;
+}
+
+section.cechy h1 {
+    font-family: "Saira Condensed", sans-serif;
+    font-size: 26px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+section.cechy h2 {
+    margin-top: 10px;
+    font-family: "Saira Condensed", sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+section.cechy p {
+    font-family: "Saira", sans-serif;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+@media(min-width: 768px) {
+    section.cechy img {
+        max-width: 400px;
+    }
+
+    section.cechy h1 {
+        font-size: 36px;
+    }
+
+    section.cechy h2 {
+        font-size: 28px;
+    }
+
+    section.cechy p {
+        font-size: 18px;
+    }
+}
+
+@media(min-width: 1024px) {
+
+    section.cechy div {
+        float: left;
+        width: 33%;
+        padding: 20px;
+        box-sizing: border-box;
+
+    }
+
+    section.cechy h2 {
+        font-size: 24px;
+    }
+
+    section.cechy p {
+        font-size: 20px;
+        line-height: 160%;
+    }
+}
+
+@media(min-width: 1600px) {
+
+    section.cechy div {
+        float: left;
+        width: 33%;
+        padding: 20px;
+        box-sizing: border-box;
+
+    }
+
+    section.cechy h2 {
+        font-size: 24px;
+    }
+
+    section.cechy p {
+        font-size: 20px;
+    }
+}
+
+
+/*projekty*/
+.portfolio {
+    width: 100%;
+    background-color: #1e1e1e;
+    padding: 10px 0 30px;
+
+}
+
+.portfolio h1 {
+    font-family: 'Saira condensed', sans-serif;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: normal;
+
+}
+
+.web img {
+    width: 100%;
+
+}
+
+.portfolio .about {
+    padding: 10px 20px 20px 10px;
+    font-family: 'Saira condensed', sans-serif;
+    color: white;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.portfolio .about h2 {
+    font-size: 18px;
+    border-bottom: 2px solid white;
+    margin-bottom: 12px;
+    padding-bottom: 6px;
+    text-indent: 20px;
+}
+
+.portfolio .about p {
+    font-size: 12px;
+    padding-left: 20px;
+}
+
+.portfolio .project {
+    max-width: 1400px;
+    margin: 0 auto 20px;
+}
+
+.portfolio .project:nth-of-type(odd) {
+    background-color: #ff4f2c;
+}
+
+.portfolio .project:nth-of-type(even) {
+    background-color: #0170ba;
+}
+
+@media (min-width: 768px) {
+    .portfolio h1 {
+        font-size: 30px;
+    }
+
+    .portfolio .about h2 {
+        font-size: 30px;
+    }
+
+    .portfolio .about p {
+        font-size: 18px;
+    }
+
+    .portfolio .project {
+        margin-bottom: 30px;
+    }
+}
+
+@media(orientation: landscape) {
+
+    .web,
+    .about {
+        box-sizing: border-box;
+        width: 50%;
+        float: left;
+    }
+
+    .web img {
+        display: block;
+    }
+
+    .portfolio .project:nth-of-type(even) .web {
+        float: right;
+
+    }
+
+    .portfolio .project:nth-of-type(even) .about {
+        padding-right: 0;
+    }
+
+    .portfolio .project:nth-of-type(odd) .about {
+        padding-left: 0;
+    }
+
+    .portfolio .project:nth-of-type(even) .about p {
+        padding-right: 20px;
+    }
+
+    .portfolio .project:nth-of-type(even) .about h2 {
+        text-indent: 0;
+        margin-left: 0px;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 1400px) {
+    .portfolio h1 {
+        font-size: 60px;
+        padding: 30px 0;
+        font-weight: bold;
+    }
+
+    .portfolio .about h2 {
+        padding-top: 36px;
+        font-size: 28px;
+        text-indent: 40px;
+        margin-bottom: 50px;
+    }
+
+    .portfolio .about p {
+        font-size: 21px;
+        padding-left: 40px;
+        line-height: 190%;
+    }
+
+    .portfolio .project {
+        margin-bottom: 40px;
+    }
+
+    .portfolio .project:nth-of-type(even) .about h2 {
+        text-indent: 0;
+        margin-left: 40px;
+    }
+}
+
+/*motto*/
+
+.motto {
+
+    background-image: url(../images/motto.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+    text-align: center;
+}
+
+.motto h1 {
+    font-size: 22px;
+    font-family: Saira, sans-serif;
+    text-transform: uppercase;
+
+    padding: 30px 5px 10px 5px;
+}
+
+.motto p {
+    font-size: 12px;
+    font-family: Saira, sans-serif;
+    text-transform: none;
+    padding: 10px 20px
+}
+
+.motto p + p {
+    font-size: 10px;
+}
+
+.motto .bg {
+    padding: 20px 10px;
+    background-color: rgba(0, 63, 114, 0.5);
+}
+
+@media (orientation: landscape) {
+    .motto p {
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media(min-width: 768px) {
+    .motto h1 {
+        font-size: 42px;
+        padding: 20px 5px 10px 5px;
+    }
+
+    .motto p {
+        font-size: 26px;
+        font-family: Saira, sans-serif;
+        text-transform: none;
+        padding: 10px 20px
+    }
+
+    .motto p + p {
+        font-size: 20px;
+    }
+
+    .motto .bg {
+        padding: 20px 10px;
+        background-color: rgba(0, 63, 114, 0.5);
+    }
+}
+
+@media (min-width: 1024px) {
+
+    .motto .bg {
+        padding: 40px 10px;
+
+    }
+
+    .motto h1 {
+        font-size: 50px;
+        margin-bottom: 70px;
+
+    }
+
+    .motto p {
+        font-size: 40px;
+        padding: 20px 50px;
+    }
+
+    .mottto p + p {
+        margin-top: 35px;
+        font-size: 26px;
+    }
+}
+
+/*like*/
+.like {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.like .item {
+    height: 25vh;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.like .item:nth-of-type(1) {
+    background-image: url(../images/hobby1.jpg)
+}
+
+.like .item:nth-of-type(2) {
+    background-image: url(../images/hobby2.jpg)
+}
+
+.like .item:nth-of-type(3) {
+    background-image: url(../images/hobby3.jpg)
+}
+
+.like .item:nth-of-type(4) {
+    background-image: url(../images/hobby4.jpg)
+}
+
+.like .item p {
+    font-family: 'saira', sans-serif;
+    color: white;
+    text-align: center;
+    text-shadow: 0 0 4px black;
+    background-color: rgba(0, 0, 0, .4);
+    font-size: 16px;
+    padding: 5px 0;
+}
+
+.like h1 {
+    font-family: 'saira condensed', sans-serif;
+    padding: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 24px;
+
+}
+
+@media(min-width: 533px) {
+    .like .item {
+        float: left;
+        width: 50%;
+        height: 47vh;
+    }
+}
+
+@media (min-width:768px) {
+
+    .like h1 {
+        font-size: 48px;
+        margin-top: 40px;
+        margin-bottom: 35px;
+
+    }
+
+    .like .item p {
+        font-size: 30px;
+        padding: 15px 0;
+    }
+}
+
+@media (min-width: 1024px) {
+    .like .item p {
+        padding: 0;
+        line-height: 40vh;
+        opacity: 0;
+        transition: 1s;
+        cursor: default;
+    }
+
+    .like .item:hover p {
+        opacity: 1;
+    }
+
+    .like .item {
+        background-size: 100%;
+        transition: 1s;
+    }
+
+    .like .item:hover {
+        background-size: 130%;
+    }
+
+}
+
+@media (min-width: 1600px) {
+    .like h1 {
+        font-size: 60px;
+        margin-top: 50px;
+        margin-bottom: 45px;
+
+    }
+
+    .like .item p {
+        font-size: 40px;
+    }
+}
+
+/*kontakt*/
+
+
+.contact {
+    padding: 20px;
+    background-color: black;
+}
+
+.contact .wrap {
+    padding-top: 20px;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.contact h1 {
+    font-family: saira, sans-serif;
+    font-weight: normal;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 20px;
+
+}
+
+.contact input,
+.contact button,
+.contact textarea {
+    width: 100%;
+    margin-bottom: 25px;
+    font-family: saira, sans-serif;
+    font-size: 12px;
+    padding: 5px;
+
+}
+
+.contact input {
+    height: 36px;
+}
+
+.contact textarea {
+    height: 120px;
+}
+
+.contact .social {
+    padding: 10px 0;
+    color: white;
+    font-family: saira condensed, sans-serif;
+}
+
+.contact .social img {
+    float: left;
+    padding-left: 15px;
+}
+
+.contact .social span {
+    float: left;
+    font-size: 15px;
+    line-height: 70px;
+    padding-left: 20px;
+}
+
+@media(min-width: 533px) {
+    .contact .social {
+        display: inline-block;
+        width: 49%;
+    }
+
+}
+
+@media(min-width: 1024px) {
+    .contact h1 {
+        font-size: 60px;
+        padding: 30px 0;
+    }
+
+    .contact form,
+    .contact .socials {
+        float: left;
+        width: 40%;
+        padding: 0 40px;
+    }
+
+    .contact .social {
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .contact input,
+    .contact button,
+    .contact textarea {
+        margin-bottom: 35px;
+
+    }
+
+    .contact input {
+
+        height: 46px;
+        font-size: 24px;
+
+    }
+
+    .contact textarea {
+        height: 180px;
+        font-size: 24px;
+    }
+
+    .contact button {
+        font-size: 20px;
+        line-height: 50px;
+        transition: .3s;
+        cursor: pointer;
+
+    }
+
+    .contact button:hover {
+        color: black;
+        background-color: #fff;
+    }
+}
+
+footer {
+    padding: 20px;
+    background-color: #29a6dc;
+    font-size: 25px;
+    font-family: Saira, sans-serif;
+    text-align: center;
+}
